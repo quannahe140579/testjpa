@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: wCXc2WfHvnH8xcf
+      MYSQL_DATABASE: testjpadb
+      MYSQL_USER: testjpadbuser
+      MYSQL_PASSWORD: testjpadbpassword
+
+  adminer:
+    image: adminer
+    ports:
+      - 10000:8080
